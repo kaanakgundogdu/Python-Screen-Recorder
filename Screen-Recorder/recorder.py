@@ -12,7 +12,7 @@ class Recorder():
         self.fps = 7.0
         resolution = (self.w, self.h)
         codec = cv2.VideoWriter_fourcc(*"XVID")
-        filename = "output/"+self.current_file_name+".avi"
+        filename = "output/"+self.current_file_name+".mp4"
         self.out = cv2.VideoWriter(filename, codec, self.fps, resolution)
         cv2.namedWindow("Kaan's Screen Recorder", cv2.WINDOW_NORMAL)
         cv2.resizeWindow("Kaan's Screen Recorder", 825, 480)
